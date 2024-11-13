@@ -32,28 +32,28 @@ dsc_alarm_panel:
   expanderaddr2: "0" # 2nd expander emulator address to use . Set to 0 to disable. 
 
   ##ESP32 Pins
-  dscclockpin: "22"
-  dscreadpin: "21"
-  dscwritepin: "18"
+  #dscclockpin: "22"
+  #dscreadpin: "21"
+  #dscwritepin: "18"
   
   ##ESP8266 Pins
-  #dscclockpin: "5"
-  #dscreadpin: "4"
-  #dscwritepin: "15" 
+  dscclockpin: "5"
+  dscreadpin: "4"
+  dscwritepin: "15" 
   
 
   clean_build: "false" #default is false.  set to true if getting duplication errors in linking step.  
 
-esp32: 
-  board: nodemcu-32s
-  framework: 
-    type: arduino
-    version: recommended
+#esp32: 
+  #board: nodemcu-32s
+  #framework: 
+    #type: arduino
+    #version: recommended
 
-#esp8266:    
-  #board: nodemcuv2
-  #framework:
-    #version: recommended 
+esp8266:    
+  board: nodemcuv2
+  framework:
+    version: recommended 
 
 #location of alarm panel code.  You can use the github release version  or 
 #copy the code to directory "my_components" in your main esphome directory   
